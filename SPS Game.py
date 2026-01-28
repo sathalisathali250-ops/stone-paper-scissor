@@ -1,10 +1,12 @@
 from random import*
 st=["stone","paper","scissor"]
+print("THE OPTION YOU HAVE TO CHOOOSE:",st)
+last=int(input("How many you want to play:"))
 ch=1
 sc=0
 sys=0
 
-while ch<=5:
+while ch<=last:
     user=input("User choice:")
     comp=choice(st)
     print("Computer Choice:",comp)
@@ -36,4 +38,3 @@ elif sys>sc:
     print("Computer won")
 else:
     print("User won")
-
